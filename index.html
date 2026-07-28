@@ -26,7 +26,6 @@
             <a href="#skills" class="nav-link px-3 py-2 text-sm font-medium">Keahlian</a>
             <a href="#projects" class="nav-link px-3 py-2 text-sm font-medium">Proyek</a>
             <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium">Kontak</a>
-            <!-- Toggle Dihapus Full Night Mode -->
           </div>
           <div class="md:hidden flex items-center">
             <button
@@ -60,7 +59,6 @@
           <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-white">Keahlian</a>
           <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-white">Proyek</a>
           <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white">Kontak</a>
-          <!-- Toggle Mobile Dihapus -->
         </div>
       </div>
     </nav>
@@ -105,12 +103,12 @@
         <div class="animate-fadeIn delay-200 flex justify-center">
           <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
             <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-red-900 rounded-full blur-xl opacity-30 animate-pulse"></div>
-           <!-- //profil  -->
-           <img               
-              src="/image.png" 
+            <!-- PERBAIKAN: path foto profil langsung ke image.png (tanpa slash) -->
+            <img               
+              src="image.png" 
               alt="Profil"
               class="relative w-full h-full rounded-full object-cover border-4 border-red-600 shadow-xl floating"
-            ></img>
+            >
           </div>
         </div>
       </div>
@@ -345,7 +343,8 @@
         </div>
       </div>
     </section>
-        <!-- Projects Section -->
+
+    <!-- Projects Section -->
     <section id="projects" class="py-20 section-darker">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
@@ -367,7 +366,8 @@
                 <!-- BAGIAN DEPAN -->
                 <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
                   <div class="h-48 overflow-hidden">
-                    <img src="img/images.jpg" alt="Nextcloud Project" class="w-full h-full object-cover">
+                    <!-- PERBAIKAN: pake nextcloud_icon_130873.webp -->
+                    <img src="nextcloud_icon_130873.webp" alt="Nextcloud Project" class="w-full h-full object-cover">
                   </div>
                   <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold mb-2 text-white">Penyimpanan Awan Pribadi</h3>
@@ -384,8 +384,8 @@
                 </div>
                 <!-- BAGIAN BELAKANG -->
                 <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="img/images.jpg" alt="Nextcloud Background" class="absolute inset-0 w-full h-full object-cover z-0">
-                  <div class="absolute inset-0 bg-black/70 z-0"></div> <!-- Overlay Gelap -->
+                  <img src="nextcloud_icon_130873.webp" alt="Nextcloud Background" class="absolute inset-0 w-full h-full object-cover z-0">
+                  <div class="absolute inset-0 bg-black/70 z-0"></div>
                   <div class="relative z-10 p-6 flex flex-col items-center">
                     <h3 class="text-xl font-bold mb-4 text-center">Nextcloud Docker</h3>
                     <p class="text-center mb-6 text-sm">
@@ -405,15 +405,15 @@
             </div>
           </div>
 
-          <!-- Proyek 2: Jellyfin (PERBAIKAN TYPO) -->
+          <!-- Proyek 2: Jellyfin -->
           <div class="animate-fadeIn delay-300">
             <div class="project-card h-full">
               <div class="project-card-inner h-full">
                 <!-- BAGIAN DEPAN -->
                 <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
                   <div class="h-48 overflow-hidden">
-                    <!-- TYPO DIPERBAIKI: jeffyln -> jellyfin -->
-                    <img src="img/jeffyln.png" alt="Jellyfin Project" class="w-full h-full object-cover">
+                    <!-- PERBAIKAN: pake jeffyln.png (biarkan sesuai nama file asli) -->
+                    <img src="jeffyln.png" alt="Jellyfin Project" class="w-full h-full object-cover">
                   </div>
                   <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold mb-2 text-white">Home Media Server</h3>
@@ -430,8 +430,8 @@
                 </div>
                 <!-- BAGIAN BELAKANG -->
                 <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="img/jeffyln.png" alt="Jellyfin Background" class="absolute inset-0 w-full h-full object-cover z-0">
-                  <div class="absolute inset-0 bg-black/70 z-0"></div> <!-- Overlay Gelap -->
+                  <img src="jeffyln.png" alt="Jellyfin Background" class="absolute inset-0 w-full h-full object-cover z-0">
+                  <div class="absolute inset-0 bg-black/70 z-0"></div>
                   <div class="relative z-10 p-6 flex flex-col items-center">
                     <h3 class="text-xl font-bold mb-4 text-center">Jellyfin Media</h3>
                     <p class="text-center mb-6 text-sm">
@@ -451,15 +451,15 @@
             </div>
           </div>
 
-          <!-- Proyek 3: Python Script (PERBAIKAN TYPO) -->
+          <!-- Proyek 3: Python Script -->
           <div class="animate-fadeIn delay-400">
             <div class="project-card h-full">
               <div class="project-card-inner h-full">
                 <!-- BAGIAN DEPAN -->
                 <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
                   <div class="h-48 overflow-hidden">
-                    <!-- TYPO DIPERBAIKI: autoliccker -> autoclicker -->
-                    <img src="img/autoliccker.png" alt="Python Project" class="w-full h-full object-cover">
+                    <!-- PERBAIKAN: pake autoclicker.png (bukan autoliccker.png) -->
+                    <img src="autoclicker.png" alt="Python Project" class="w-full h-full object-cover">
                   </div>
                   <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold mb-2 text-white">Automasi Tugas Python</h3>
@@ -476,8 +476,8 @@
                 </div>
                 <!-- BAGIAN BELAKANG -->
                 <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="img/autoliccker.png" alt="Autoclicker Background" class="absolute inset-0 w-full h-full object-cover z-0">
-                  <div class="absolute inset-0 bg-black/70 z-0"></div> <!-- Overlay Gelap -->
+                  <img src="autoclicker.png" alt="Autoclicker Background" class="absolute inset-0 w-full h-full object-cover z-0">
+                  <div class="absolute inset-0 bg-black/70 z-0"></div>
                   <div class="relative z-10 p-6 flex flex-col items-center">
                     <h3 class="text-xl font-bold mb-4 text-center">Autoclicker Python</h3>
                     <p class="text-center mb-6 text-sm">
@@ -507,6 +507,7 @@
         </div>
       </div>
     </section>
+
     <!-- Footer -->
     <footer class="py-12 section-darker border-t border-gray-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
