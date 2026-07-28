@@ -358,143 +358,110 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
           <!-- Proyek 1: Nextcloud -->
-          <div class="animate-fadeIn delay-200">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden">
-                    <img src="nextcloud_icon_130873.webp" alt="Nextcloud Project" class="w-full h-full object-cover">
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">Penyimpanan Cloud Pribadi</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Implementasi Nextcloud menggunakan Docker Compose untuk penyimpanan data yang aman dan terpusat.
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Docker</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Linux</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="nextcloud_icon_130873.webp" alt="Nextcloud Background" class="absolute inset-0 w-full h-full object-cover z-0">
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">Nextcloud Docker</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Sistem ini dilengkapi dengan database MariaDB, Redis untuk caching, dan Nginx Proxy Manager untuk SSL otomatis.
-                    </p>
-                    <div class="flex space-x-4">
-                      <a href="#" class="px-4 py-2 bg-white text-blue-500 font-medium rounded-full hover:bg-gray-200 transition duration-300 text-sm">
-                        Demo
-                      </a>
-                      <a href="#" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Kode
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<div class="animate-fadeIn delay-200">
+  <div class="project-card h-full">
+    <div class="project-card-inner h-full">
+      <!-- BAGIAN DEPAN -->
+      <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
+        <div class="h-48 overflow-hidden">
+          <img src="nextcloud_icon_130873.webp" alt="Nextcloud" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold mb-2 text-white">Penyimpanan Awan Pribadi</h3>
+          <p class="text-gray-400 text-sm mb-4">Implementasi Nextcloud menggunakan Docker Compose untuk penyimpanan data yang aman dan terpusat.</p>
+          <div class="mt-auto flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Docker</span>
+            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Linux</span>
           </div>
-
-          <!-- Proyek 2: Jellyfin -->
-          <div class="animate-fadeIn delay-300">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden">
-                    <img src="jeffyln.png" alt="Jellyfin Project" class="w-full h-full object-cover">
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">Home Media Server</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Membangun server media streaming pribadi menggunakan Jellyfin untuk akses konten multimedia dari mana saja.
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Multimedia</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Server</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="jeffyln.png" alt="Jellyfin Background" class="absolute inset-0 w-full h-full object-cover z-0">
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">Jellyfin Media</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Mendukung hardware transcoding untuk performa streaming yang lancar di berbagai perangkat.
-                    </p>
-                    <div class="flex space-x-4">
-                      <a href="#" class="px-4 py-2 bg-white text-blue-500 font-medium rounded-full hover:bg-gray-200 transition duration-300 text-sm">
-                        Demo
-                      </a>
-                      <a href="#" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Kode
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+      <!-- BAGIAN BELAKANG -->
+      <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
+        <img src="nextcloud_icon_130873.webp" alt="Nextcloud" class="absolute inset-0 w-full h-full object-cover z-0">
+        <div class="absolute inset-0 bg-black/70 z-0"></div>
+        <div class="relative z-10 p-6 flex flex-col items-center">
+          <h3 class="text-xl font-bold mb-4 text-center">Nextcloud Docker</h3>
+          <p class="text-center mb-6 text-sm">Sistem ini dilengkapi dengan database MariaDB, Redis untuk caching, dan Nginx Proxy Manager untuk SSL otomatis.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="px-4 py-2 bg-white text-blue-500 font-medium rounded-full hover:bg-gray-200 transition duration-300 text-sm">Demo</a>
+            <a href="#" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">Kode</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-          <!-- Proyek 3: Python Script -->
-          <div class="animate-fadeIn delay-400">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden">
-                    <!-- PERBAIKAN: autocliker.png (tanpa huruf c tambahan) -->
-                    <img src="autocliker.png" alt="Python Project" class="w-full h-full object-cover">
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">Automasi Tugas Python</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Kumpulan skrip Python untuk otomatisasi tugas harian seperti backup data dan monitoring server.
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Automation</span>
-                        <span class="px-3 py-1 bg-gray-800 accent-red text-xs font-medium rounded-full border border-red-600">Script</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="autocliker.png" alt="Autoclicker Background" class="absolute inset-0 w-full h-full object-cover z-0">
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">Autocliker Python</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Skrip menggunakan library PyAutoGUI yang dapat dikonfigurasi kecepatannya dan lokasi kliknya.
-                    </p>
-                    <div class="flex space-x-4">
-                      <a href="#" class="px-4 py-2 bg-white text-blue-500 font-medium rounded-full hover:bg-gray-200 transition duration-300 text-sm">
-                        Demo
-                      </a>
-                      <a href="#" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Kode
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!-- Proyek 2: Jellyfin -->
+<div class="animate-fadeIn delay-300">
+  <div class="project-card h-full">
+    <div class="project-card-inner h-full">
+      <!-- BAGIAN DEPAN -->
+      <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
+        <div class="h-48 overflow-hidden">
+          <img src="jeffyln.png" alt="Jellyfin" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold mb-2 text-white">Home Media Server</h3>
+          <p class="text-gray-400 text-sm mb-4">Membangun server media streaming pribadi menggunakan Jellyfin untuk akses konten multimedia dari mana saja.</p>
+          <div class="mt-auto flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Multimedia</span>
+            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Server</span>
           </div>
+        </div>
+      </div>
+      <!-- BAGIAN BELAKANG -->
+      <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
+        <img src="jeffyln.png" alt="Jellyfin" class="absolute inset-0 w-full h-full object-cover z-0">
+        <div class="absolute inset-0 bg-black/70 z-0"></div>
+        <div class="relative z-10 p-6 flex flex-col items-center">
+          <h3 class="text-xl font-bold mb-4 text-center">Jellyfin Media</h3>
+          <p class="text-center mb-6 text-sm">Mendukung hardware transcoding untuk performa streaming yang lancar di berbagai perangkat.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="px-4 py-2 bg-white text-blue-500 font-medium rounded-full hover:bg-gray-200 transition duration-300 text-sm">Demo</a>
+            <a href="#" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">Kode</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Proyek 3: Python -->
+<div class="animate-fadeIn delay-400">
+  <div class="project-card h-full">
+    <div class="project-card-inner h-full">
+      <!-- BAGIAN DEPAN -->
+      <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
+        <div class="h-48 overflow-hidden">
+          <img src="autocliker.png" alt="Python" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold mb-2 text-white">Automasi Tugas Python</h3>
+          <p class="text-gray-400 text-sm mb-4">Kumpulan skrip Python untuk otomatisasi tugas harian seperti backup data dan monitoring server.</p>
+          <div class="mt-auto flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Automation</span>
+            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-red-600">Script</span>
+          </div>
+        </div>
+      </div>
+      <!-- BAGIAN BELAKANG -->
+      <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
+        <img src="autocliker.png" alt="Python" class="absolute inset-0 w-full h-full object-cover z-0">
+        <div class="absolute inset-0 bg-black/70 z-0"></div>
+        <div class="relative z-10 p-6 flex flex-col items-center">
+          <h3 class="text-xl font-bold mb-4 text-center">Autocliker Python</h3>
+          <p class="text-center mb-6 text-sm">Skrip menggunakan library PyAutoGUI yang dapat dikonfigurasi kecepatannya dan lokasi kliknya.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="px-4 py-2 bg-white text-blue-500 font-medium rounded-full hover:bg-gray-200 transition duration-300 text-sm">Demo</a>
+            <a href="#" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">Kode</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
 
         <div class="mt-16 text-center animate-fadeIn delay-500">
