@@ -1,4 +1,3 @@
-/* Custom CSS for animations and effects */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -43,13 +42,11 @@
   animation-delay: 0.5s;
 }
 
-/* High Contrast Theme */
 body {
   background-color: #0a0a0a;
   color: #ffffff;
 }
 
-/* Grid background pattern */
 .grid-bg {
   background-color: #0a0a0a;
   background-image: 
@@ -117,11 +114,10 @@ body {
   width: 100%;
 }
 
-/* Ganti kode .project-card yang lama dengan ini */
 .project-card {
   perspective: 1000px;
   position: relative;
-  min-height: 450px; /* Beri tinggi pasti agar kartu tidak collapse */
+  min-height: 450px; 
 }
 
 .project-card-inner {
@@ -142,7 +138,7 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 0.75rem; /* sesuai rounded-xl */
+  border-radius: 0.75rem; 
   overflow: hidden;
 }
 
@@ -155,7 +151,6 @@ body {
   z-index: 1;
 }
 
-/* Optional: untuk memastikan gambar di dalam card tidak meluber */
 .project-card-front img,
 .project-card-back img {
   width: 100%;
@@ -192,7 +187,7 @@ body {
   height: 100%;
 }
 
-/* Floating animation */
+/* Floating animasi */
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -209,7 +204,7 @@ body {
   animation: float 6s ease-in-out infinite;
 }
 
-/* Pulse animation */
+/* Pulse animasi */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -226,7 +221,6 @@ body {
   animation: pulse 2s infinite;
 }
 
-/* Custom checkbox for dark mode toggle */
 .toggle-checkbox:checked {
   right: 0;
   border-color: #ff3333;
@@ -236,7 +230,7 @@ body {
   background: #ff3333;
 }
 
-/* Glass morphism effect */
+/* Glass morphism effect  */
 .glass-effect {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
@@ -244,7 +238,6 @@ body {
   border: 1px solid rgba(255, 51, 51, 0.2);
 }
 
-/* Custom tooltip */
 .tooltip {
   position: relative;
 }
@@ -272,7 +265,6 @@ body {
   opacity: 1;
 }
 
-/* Custom underline animation */
 .underline-animation {
   position: relative;
 }
@@ -351,7 +343,6 @@ body {
   pointer-events: none;
 }
 
-/* Progress bar styling */
 .progress-bar {
   background-color: #1a1a1a;
 }
@@ -360,7 +351,6 @@ body {
   background-color: #ff3333;
 }
 
-/* Section backgrounds */
 .section-dark {
   background-color: #0a0a0a;
 }
@@ -369,7 +359,6 @@ body {
   background-color: #000000;
 }
 
-/* Button styles */
 .btn-primary {
   background-color: #ff3333;
   color: #ffffff;
@@ -396,7 +385,6 @@ body {
   border-color: #ffffff;
 }
 
-/* Input styling */
 input, textarea {
   background-color: #1a1a1a !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
@@ -412,7 +400,24 @@ input::placeholder, textarea::placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-/* Typing animation cursor */
+/* animasi cursor */
+.extra-project {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.extra-project.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
 .typing-cursor::after {
   content: "|";
   animation: blink 1s step-end infinite;
