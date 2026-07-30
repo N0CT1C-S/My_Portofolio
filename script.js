@@ -37,7 +37,6 @@ if (mobileMenuButton && mobileMenu) {
   });
 }
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -55,7 +54,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Typing Animation
 const typingElement = document.getElementById("typing-text");
 const textToType = "Muhammad Sabillilah Ramadhan";
 let index = 0;
@@ -76,3 +74,64 @@ document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
   }
 });
+
+// Toggle Show More/Less Projects
+const toggleProjectsBtn = document.getElementById("toggle-projects-btn");
+const toggleProjectsText = document.getElementById("toggle-projects-text");
+const toggleProjectsIcon = document.getElementById("toggle-projects-icon");
+const extraProjects = document.querySelectorAll(".extra-project");
+
+if (toggleProjectsBtn) {
+  toggleProjectsBtn.addEventListener("click", () => {
+    const isShown = extraProjects[0] && extraProjects[0].classList.contains("show");
+
+    if (isShown) {
+      // Sembunyikan lagi
+      extraProjects.forEach((project) => project.classList.remove("show"));
+      toggleProjectsText.textContent = "Lihat Semua Proyek";
+      toggleProjectsIcon.classList.remove("rotate-180");
+
+      // Scroll balik ke atas section projects biar rapi
+      const projectsSection = document.getElementById("projects");
+      if (projectsSection) {
+        window.scrollTo({
+          top: projectsSection.offsetTop - 64,
+          behavior: "smooth"
+        });
+      }
+    } else {
+      // Tampilkan dengan efek muncul bertahap
+      extraProjects.forEach((project, i) => {
+        setTimeout(() => {
+          project.classList.add("show");
+        }, i * 100);
+      });
+      toggleProjectsText.textContent = "Tampilkan Lebih Sedikit";
+      toggleProjectsIcon.classList.add("rotate-180");
+    }
+  });
+}
+
+const contactSubmit = document.getElementById("contact-submit");
+const waNumber = "6281234567890"; 
+
+if (contactSubmit) {
+  contactSubmit.addEventListener("click", () => {
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const messageInput = document.getElementById("message");
+
+    const name = nameInput ? nameInput.value.trim() : "";
+    const email = emailInput ? emailInput.value.trim() : "";
+    const message = messageInput ? messageInput.value.trim() : "";
+
+    if (!name || !email || !message) {
+      alert("Mohon lengkapi semua field terlebih dahulu.");
+      return;
+    }
+
+    const waText = `Halo, saya ${name} (${email}).%0A%0A${encodeURIComponent(message)}`;
+    const waLink = `https://wa.me/${waNumber}?text=${waText}`;
+    window.open(waLink, "_blank");
+  });
+}
