@@ -1,46 +1,22 @@
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes gridBackground {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 50px 50px;
-  }
+  0% { background-position: 0 0; }
+  100% { background-position: 50px 50px; }
 }
 
 .animate-fadeIn {
   animation: fadeIn 0.8s ease-out forwards;
 }
 
-.delay-100 {
-  animation-delay: 0.1s;
-}
-
-.delay-200 {
-  animation-delay: 0.2s;
-}
-
-.delay-300 {
-  animation-delay: 0.3s;
-}
-
-.delay-400 {
-  animation-delay: 0.4s;
-}
-
-.delay-500 {
-  animation-delay: 0.5s;
-}
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
 
 body {
   background-color: #0a0a0a;
@@ -62,13 +38,8 @@ body {
   color: transparent;
 }
 
-.accent-red {
-  color: #ff3333;
-}
-
-.accent-red-bg {
-  background-color: #ff3333;
-}
+.accent-red { color: #ff3333; }
+.accent-red-bg { background-color: #ff3333; }
 
 .card-hover-effect {
   transition: all 0.3s ease;
@@ -117,7 +88,7 @@ body {
 .project-card {
   perspective: 1000px;
   position: relative;
-  min-height: 450px; 
+  min-height: 450px;
 }
 
 .project-card-inner {
@@ -138,18 +109,12 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 0.75rem; 
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
-.project-card-front {
-  z-index: 2;
-}
-
-.project-card-back {
-  transform: rotateY(180deg);
-  z-index: 1;
-}
+.project-card-front { z-index: 2; }
+.project-card-back { transform: rotateY(180deg); z-index: 1; }
 
 .project-card-front img,
 .project-card-back img {
@@ -158,21 +123,13 @@ body {
   object-fit: cover;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1a1a1a;
-}
-
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(#ff3333, #cc0000);
   border-radius: 10px;
 }
 
-/* Wave divider */
 .wave-divider {
   position: relative;
   height: 60px;
@@ -187,34 +144,20 @@ body {
   height: 100%;
 }
 
-/* Floating animasi */
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
 }
 
 .floating {
   animation: float 6s ease-in-out infinite;
 }
 
-/* Pulse animasi */
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 .pulse {
@@ -230,7 +173,6 @@ body {
   background: #ff3333;
 }
 
-/* Glass morphism effect  */
 .glass-effect {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
@@ -284,14 +226,9 @@ body {
   width: 100%;
 }
 
-/* Skills Carousel Animation */
 @keyframes slideInfinite {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 .skills-carousel {
@@ -318,7 +255,6 @@ body {
   min-width: 280px;
 }
 
-/* Gradient fade effect on edges */
 .skills-carousel::before {
   content: "";
   position: absolute;
@@ -343,21 +279,11 @@ body {
   pointer-events: none;
 }
 
-.progress-bar {
-  background-color: #1a1a1a;
-}
+.progress-bar { background-color: #1a1a1a; }
+.progress-fill { background-color: #ff3333; }
 
-.progress-fill {
-  background-color: #ff3333;
-}
-
-.section-dark {
-  background-color: #0a0a0a;
-}
-
-.section-darker {
-  background-color: #000000;
-}
+.section-dark { background-color: #0a0a0a; }
+.section-darker { background-color: #000000; }
 
 .btn-primary {
   background-color: #ff3333;
@@ -400,7 +326,6 @@ input::placeholder, textarea::placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-/* animasi cursor */
 .extra-project {
   display: none;
   opacity: 0;
