@@ -1,4 +1,3 @@
-// Toggle dark mode
 const toggle = document.getElementById("toggle");
 const toggleMobile = document.getElementById("toggle-mobile");
 const html = document.documentElement;
@@ -21,13 +20,11 @@ function updateLightMode(isLight) {
 if (toggle) toggle.addEventListener("change", () => updateLightMode(toggle.checked));
 if (toggleMobile) toggleMobile.addEventListener("change", () => updateLightMode(toggleMobile.checked));
 
-// Check for saved theme preference
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "light") {
   updateLightMode(true);
 }
 
-// Mobile menu toggle
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
 
@@ -70,12 +67,11 @@ function typeEffect() {
 
 document.addEventListener("DOMContentLoaded", () => {
   if (typingElement) {
-    typingElement.textContent = ""; // Clear existing text
+    typingElement.textContent = "";
     typeEffect();
   }
 });
 
-// Toggle Show More/Less Projects
 const toggleProjectsBtn = document.getElementById("toggle-projects-btn");
 const toggleProjectsText = document.getElementById("toggle-projects-text");
 const toggleProjectsIcon = document.getElementById("toggle-projects-icon");
@@ -86,12 +82,10 @@ if (toggleProjectsBtn) {
     const isShown = extraProjects[0] && extraProjects[0].classList.contains("show");
 
     if (isShown) {
-      // Sembunyikan lagi
       extraProjects.forEach((project) => project.classList.remove("show"));
       toggleProjectsText.textContent = "Lihat Semua Proyek";
       toggleProjectsIcon.classList.remove("rotate-180");
 
-      // Scroll balik ke atas section projects biar rapi
       const projectsSection = document.getElementById("projects");
       if (projectsSection) {
         window.scrollTo({
@@ -100,7 +94,6 @@ if (toggleProjectsBtn) {
         });
       }
     } else {
-      // Tampilkan dengan efek muncul bertahap
       extraProjects.forEach((project, i) => {
         setTimeout(() => {
           project.classList.add("show");
@@ -113,7 +106,7 @@ if (toggleProjectsBtn) {
 }
 
 const contactSubmit = document.getElementById("contact-submit");
-const waNumber = "6281234567890"; 
+const waNumber = "6281234567890";
 
 if (contactSubmit) {
   contactSubmit.addEventListener("click", () => {
