@@ -106,7 +106,7 @@ if (toggleProjectsBtn) {
 }
 
 const contactSubmit = document.getElementById("contact-submit");
-const waNumber = "6281234567890";
+const waNumber = "6285185799456";
 
 if (contactSubmit) {
   contactSubmit.addEventListener("click", () => {
