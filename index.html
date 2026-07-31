@@ -1,805 +1,590 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Muhammad Sabillilah Ramadhan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body class="section-dark">
-    <!-- Navigasi -->
-    <nav class="fixed w-full z-50 glass-effect shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
-          <div class="flex items-center">
-            <a href="#" class="text-xl font-bold text-white">Sigma</a>
-          </div>
-          <!-- Desktop Menu -->
-          <div class="hidden md:flex items-center space-x-8">
-            <a href="#home" class="nav-link px-3 py-2 text-sm font-medium">Home</a>
-            <a href="#about" class="nav-link px-3 py-2 text-sm font-medium">About</a>
-            <a href="#skills" class="nav-link px-3 py-2 text-sm font-medium">Skills</a>
-            <a href="#projects" class="nav-link px-3 py-2 text-sm font-medium">Projects</a>
-            <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium">Contact</a>
-          </div>
-          <div class="md:hidden flex items-center">
-            <button
-              id="mobile-menu-button"
-              class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-red-400 focus:outline-none"
-            >
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Muhammad Sabillilah Ramadhan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="section-dark">
+
+  <nav class="fixed w-full z-50 glass-effect shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="#" class="text-xl font-bold text-white">Sigma</a>
         </div>
-      </div>
-
-      <!-- Menu Mobile -->
-      <div id="mobile-menu" class="hidden md:hidden glass-effect">
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-white">home</a>
-          <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-white">about me</a>
-          <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-white">skills</a>
-          <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-white">projects</a>
-          <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white">contact</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="nav-link px-3 py-2 text-sm font-medium">Home</a>
+          <a href="#about" class="nav-link px-3 py-2 text-sm font-medium">About</a>
+          <a href="#skills" class="nav-link px-3 py-2 text-sm font-medium">Skills</a>
+          <a href="#projects" class="nav-link px-3 py-2 text-sm font-medium">Projects</a>
+          <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium">Contact</a>
         </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid-bg">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div class="animate-fadeIn">
-          <h1 class="text-4xl md:text-6xl font-bold mb-6">
-            Halo, Saya
-            <span id="typing-text" class="gradient-text">Muhammad Sabillilah Ramadhan</span>
-          </h1>
-          <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-300">
-            Cyber Security & System Administrator
-          </h2>
-          <p class="text-lg mb-8 text-gray-400">
-            Saya adalah seorang antusias teknologi yang berfokus pada keamanan siber, administrasi sistem Linux, dan otomatisasi menggunakan Python. Saya senang membangun infrastruktur server yang aman dan efisien.
-          </p>
-          <div class="flex space-x-4">
-            <a href="#projects" class="btn-primary px-8 py-3 font-medium rounded-full shadow-lg hover:shadow-xl transition duration-300">
-              View My Projects
-            </a>
-            <a href="#contact" class="btn-secondary px-8 py-3 font-medium rounded-full transition duration-300">
-              Contact Me
-            </a>
-          </div>
-          <div class="mt-8 flex space-x-4">
-            <a href="https://github.com/N0CT1C-S" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-400 transition duration-300">
-              <i class="fab fa-github text-2xl"></i>
-            </a>
-            <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-400 transition duration-300">
-              <i class="fab fa-linkedin text-2xl"></i>
-            </a>
-            <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-400 transition duration-300">
-              <i class="fab fa-instagram text-2xl"></i>
-            </a>
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-400 transition duration-300">
-              <i class="fab fa-whatsapp text-2xl"></i>
-            </a>
-          </div>
-        </div>
-        <div class="animate-fadeIn delay-200 flex justify-center">
-          <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-            <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-red-900 rounded-full blur-xl opacity-30 animate-pulse"></div>
-            <!-- PROFIL IMAGE -->
-            <img               
-              src="image.png" 
-              alt="Profil"
-              class="relative w-full h-full rounded-full object-cover border-4 border-red-600 shadow-xl floating"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Wave Divider -->
-    <div class="wave-divider">
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-          opacity=".25"
-          class="fill-current text-gray-800"
-        ></path>
-        <path
-          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-          opacity=".5"
-          class="fill-current text-gray-800"
-        ></path>
-        <path
-          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-          class="fill-current text-gray-800"
-        ></path>
-      </svg>
-    </div>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 section-darker">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            <span class="gradient-text">About Me</span>
-          </h2>
-          <div class="w-20 h-1 accent-red-bg mx-auto"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div class="animate-fadeIn delay-100">
-            <h3 class="text-2xl font-bold mb-4 text-white">Who am I?</h3>
-            <p class="text-gray-400 mb-6">
-              Saya adalah seorang siswa Teknologi Komputer dan Jaringan (TKJ) yang tertarik pada perkembangan teknologi terkini
-            </p>
-            <p class="text-gray-400 mb-6">
-              Fokus utama saya adalah belajar untuk menambah pengetahuan dan wawasan 
-            </p>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="p-4 bg-gray-900 rounded-lg shadow-sm border border-gray-800">
-                <span class="block text-2xl font-bold accent-red">7+</span>
-                <span class="text-sm text-gray-500">Projects Selesai</span>
-              </div>
-              <div class="p-4 bg-gray-900 rounded-lg shadow-sm border border-gray-800">
-                <span class="block text-2xl font-bold accent-red">0</span>
-                <span class="text-sm text-gray-500">Tahun Pengalaman</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="animate-fadeIn delay-200">
-            <div class="bg-gray-900 rounded-xl shadow-lg p-8 card-hover-effect">
-              <h3 class="text-2xl font-bold mb-4 text-white">Pendekatan Saya</h3>
-              <div class="space-y-4">
-                <div class="flex items-start">
-                  <div class="flex-shrink-0 mt-1">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-full bg-red-900 accent-red">
-                      <i class="fas fa-shield-alt"></i>
-                    </div>
-                  </div>
-                  <div class="ml-4">
-                    <h4 class="text-lg font-semibold text-white">Keamanan Utama</h4>
-                    <p class="text-gray-400">
-                      Saya memprioritaskan keamanan dalam setiap sistem yang saya bangun atau kelola.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="flex-shrink-0 mt-1">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-full bg-red-900 accent-red">
-                      <i class="fas fa-terminal"></i>
-                    </div>
-                  </div>
-                  <div class="ml-4">
-                    <h4 class="text-lg font-semibold text-white">Otomatisasi</h4>
-                    <p class="text-gray-400">
-                      Mengurangi tugas manual dengan skrip Python dan Docker untuk efisiensi maksimal.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="flex-shrink-0 mt-1">
-                    <div class="flex items-center justify-center h-8 w-8 rounded-full bg-red-900 accent-red">
-                      <i class="fas fa-server"></i>
-                    </div>
-                  </div>
-                  <div class="ml-4">
-                    <h4 class="text-lg font-semibold text-white">Stabilitas Sistem</h4>
-                    <p class="text-gray-400">
-                      Memastikan server dan layanan berjalan 24/7 dengan aman dan menjaga agar server terhindar dari peretasan.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 section-dark">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            <span class="gradient-text">Skills</span>
-          </h2>
-          <div class="w-20 h-1 accent-red-bg mx-auto"></div>
-        </div>
-
-        <div class="skills-carousel">
-          <div class="skills-carousel-track">
-            <!-- SQL Injection -->
-            <div class="skills-carousel-item">
-              <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center card-hover-effect h-full">
-                <div class="skill-icon inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4 mx-auto">
-                  <i class="fas fa-database text-4xl accent-red"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">SQL Injection</h3>
-                <div class="w-full progress-bar rounded-full h-2.5">
-                  <div class="progress-fill h-2.5 rounded-full" style="width: 85%"></div>
-                </div>
-                <p class="text-sm text-gray-500 mt-2">Advanced</p>
-              </div>
-            </div>
-
-            <!-- Kali Linux -->
-            <div class="skills-carousel-item">
-              <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center card-hover-effect h-full">
-                <div class="skill-icon inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4 mx-auto">
-                  <i class="fab fa-linux text-4xl accent-red"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">Kali Linux</h3>
-                <div class="w-full progress-bar rounded-full h-2.5">
-                  <div class="progress-fill h-2.5 rounded-full" style="width: 90%"></div>
-                </div>
-                <p class="text-sm text-gray-500 mt-2">Advanced</p>
-              </div>
-            </div>
-
-            <!-- Arch Linux -->
-            <div class="skills-carousel-item">
-              <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center card-hover-effect h-full">
-                <div class="skill-icon inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4 mx-auto">
-                  <i class="fas fa-desktop text-4xl accent-red"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">Arch Linux</h3>
-                <div class="w-full progress-bar rounded-full h-2.5">
-                  <div class="progress-fill h-2.5 rounded-full" style="width: 95%"></div>
-                </div>
-                <p class="text-sm text-gray-500 mt-2">Advanced</p>
-              </div>
-            </div>
-
-            <!-- Ubuntu Server -->
-            <div class="skills-carousel-item">
-              <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center card-hover-effect h-full">
-                <div class="skill-icon inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4 mx-auto">
-                  <i class="fas fa-server text-4xl accent-red"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">Ubuntu Server</h3>
-                <div class="w-full progress-bar rounded-full h-2.5">
-                  <div class="progress-fill h-2.5 rounded-full" style="width: 95%"></div>
-                </div>
-                <p class="text-sm text-gray-500 mt-2">Advanced</p>
-              </div>
-            </div>
-
-            <!-- Linux Mint -->
-            <div class="skills-carousel-item">
-              <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center card-hover-effect h-full">
-                <div class="skill-icon inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4 mx-auto">
-                  <i class="fab fa-linux text-4xl accent-red"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">Linux Mint</h3>
-                <div class="w-full progress-bar rounded-full h-2.5">
-                  <div class="progress-fill h-2.5 rounded-full" style="width: 90%"></div>
-                </div>
-                <p class="text-sm text-gray-500 mt-2">Advanced</p>
-              </div>
-            </div>
-
-            <!-- Parrot OS -->
-            <div class="skills-carousel-item">
-              <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center card-hover-effect h-full">
-                <div class="skill-icon inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4 mx-auto">
-                  <i class="fas fa-mask text-4xl accent-red"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">Parrot OS</h3>
-                <div class="w-full progress-bar rounded-full h-2.5">
-                  <div class="progress-fill h-2.5 rounded-full" style="width: 85%"></div>
-                </div>
-                <p class="text-sm text-gray-500 mt-2">Advanced</p>
-              </div>
-            </div>
-
-            <!-- Duplicate items for infinite loop effect -->
-            <!-- SQL Injection -->
-            <div class="skills-carousel-item">
-              <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center card-hover-effect h-full">
-                <div class="skill-icon inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4 mx-auto">
-                  <i class="fas fa-database text-4xl accent-red"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">SQL Injection</h3>
-                <div class="w-full progress-bar rounded-full h-2.5">
-                  <div class="progress-fill h-2.5 rounded-full" style="width: 85%"></div>
-                </div>
-                <p class="text-sm text-gray-500 mt-2">Beginner</p>
-              </div>
-            </div>
-
-            <!-- Kali Linux -->
-            <div class="skills-carousel-item">
-              <div class="bg-gray-900 rounded-xl shadow-lg p-6 text-center card-hover-effect h-full">
-                <div class="skill-icon inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4 mx-auto">
-                  <i class="fab fa-linux text-4xl accent-red"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-2 text-white">Kali Linux</h3>
-                <div class="w-full progress-bar rounded-full h-2.5">
-                  <div class="progress-fill h-2.5 rounded-full" style="width: 90%"></div>
-                </div>
-                <p class="text-sm text-gray-500 mt-2">Advanced</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 section-darker">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            <span class="gradient-text">My Projects</span>
-          </h2>
-          <div class="w-20 h-1 accent-red-bg mx-auto"></div>
-          <p class="mt-6 max-w-2xl mx-auto text-gray-400">
-            Berikut adalah beberapa proyek terbaru yang telah saya kerjakan. Setiap proyek dirancang untuk menyelesaikan masalah spesifik dan memberikan pengalaman terbaik.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          <!-- Proyek 1: Nextcloud -->
-          <div class="animate-fadeIn delay-200">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden">
-                    <img src="images.jpg" alt="Nextcloud Project" class="w-full h-full object-cover" />
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">Penyimpanan Cloud Pribadi</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Implementasi Nextcloud menggunakan Docker Compose untuk penyimpanan data yang aman dan terpusat.
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Docker</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Linux</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="images.jpg" alt="Nextcloud Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">Nextcloud Docker</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Sistem ini dilengkapi dengan database MariaDB, Redis untuk caching, dan Nginx Proxy Manager untuk SSL otomatis.
-                    </p>
-                    <div class="flex space-x-4">
-                      <a href="https://github.com/N0CT1C-S/Cloud-Dokumentasi-" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Source Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Proyek 2: Jellyfin -->
-          <div class="animate-fadeIn delay-300">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden">
-                    <img src="jeffyln.png" alt="Jellyfin Project" class="w-full h-full object-cover" />
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">Home Media Server</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Membangun server media streaming pribadi menggunakan Jellyfin untuk akses konten multimedia dari mana saja.
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Multimedia</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Server</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="jeffyln.png" alt="Jellyfin Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">Jellyfin Media</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Mendukung hardware transcoding untuk performa streaming yang lancar di berbagai perangkat.
-                    </p>
-                    <div class="flex space-x-4">
-                      <a href="https://github.com/N0CT1C-S/Cloud-Dokumentasi-" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Source Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Proyek 3: Python Script -->
-          <div class="animate-fadeIn delay-400">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden">
-                    <img src="autoliccker.png" alt="Python Project" class="w-full h-full object-cover" />
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">Autoclicker</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Script yang berisi autoclicker bisa untuk farming roblox atau tap-tap tiktok
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Automation</span>
-                        <span class="px-3 py-1 bg-gray-800 accent-red text-xs font-medium rounded-full border border-red-600">Script</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="autoliccker.png" alt="Autoclicker Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">Autoclicker Python</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Skrip menggunakan library PyAutoGUI yang dapat dikonfigurasi kecepatannya dan lokasi kliknya.
-                    </p>
-                    <div class="flex space-x-4">
-                      <a href="https://github.com/N0CT1C-S/autocklicker" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Source Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Proyek 4: Kalkulator Mobile -->
-          <div class="animate-fadeIn delay-100 extra-project">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-800 to-black">
-                    <img src="image copy.png" alt="Kalkulator Mobile Project" class="w-full h-full object-cover" />
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">Kalkulator Mobile</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Membangun Kalkulator Pribadi yang sigma 
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Mobile</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Kalkulator</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="image copy.png" alt="Kalkulator Mobile Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">Kalkulator-mobile</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Dibuat oleh orang yang sigma
-                    </p>
-                    <div class="flex space-x-4">
-                      <a href="https://n0ct1c-s.github.io/Kalkulator-mobile/" class="px-4 py-2 bg-white text-blue-500 font-medium rounded-full hover:bg-gray-200 transition duration-300 text-sm">
-                        Demo
-                      </a>
-                      <a href="https://github.com/N0CT1C-S/Kalkulator-mobile" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Source Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5: Portofolio -->
-          <div class="animate-fadeIn delay-200 extra-project">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden">
-                    <img src="image copy 2.png" alt="Portofolio Project" class="w-full h-full object-cover" />
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">Portofolio</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Membuat Portofolio yang modern, dan sigma
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Portofolio</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Html</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Css</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">JavaScript</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Github</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="image copy 2.png" alt="Portofolio Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">Portofolio</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Menyantumkan pengalaman, biodata, media sosial, skills, dan seluruh project yang pernah dikerjakan
-                    </p>
-                    <div class="flex space-x-4">
-                      <a href="https://n0ct1c-s.github.io/My_Portofolio/" class="px-4 py-2 bg-white text-blue-500 font-medium rounded-full hover:bg-gray-200 transition duration-300 text-sm">
-                        Demo
-                      </a>
-                      <a href="https://github.com/N0CT1C-S/My_Portofolio" class="px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Source Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6: QR Generator -->
-          <div class="animate-fadeIn delay-300 extra-project">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-800 to-black">
-                    <img src="image copy 3.png" alt="QR Generator Project" class="w-full h-full object-cover" />
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">QR</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Membuat Teks, Gambar menjadi QR
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">QR</span>
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Generate</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="image copy 3.png" alt="QR Generator Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">QR</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Membuat Teks, Gambar menjadi QR dengan lebih mudah menggunakan tools ini
-                    </p>
-                    <div class="flex w-full px-4">
-                      <a href="#" class="w-full text-center px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Source Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 7: HTTP to HTTPS -->
-          <div class="animate-fadeIn delay-400 extra-project">
-            <div class="project-card h-full">
-              <div class="project-card-inner h-full">
-                <!-- BAGIAN DEPAN -->
-                <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-800">
-                  <div class="h-48 overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-800 to-black">
-                    <img src="image copy 4.png" alt="HTTP to HTTPS Nextcloud Project" class="w-full h-full object-cover" />
-                  </div>
-                  <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold mb-2 text-white">HTTP to HTTPS - Nextcloud</h3>
-                    <p class="text-gray-400 text-sm mb-4">
-                      Membuat server lebih aman dari serangan sql injection
-                    </p>
-                    <div class="mt-auto">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Pentest</span>
-                        <span class="px-3 py-1 bg-gray-800 accent-red text-xs font-medium rounded-full border border-red-600">Python</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- BAGIAN BELAKANG -->
-                <div class="project-card-back absolute inset-0 rounded-xl shadow-lg overflow-hidden flex flex-col justify-center items-center text-white">
-                  <img src="image copy 4.png" alt="HTTP to HTTPS Nextcloud Background" class="absolute inset-0 w-full h-full object-cover z-0" />
-                  <div class="absolute inset-0 bg-black/70 z-0"></div>
-                  <div class="relative z-10 p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-4 text-center">http to https to Nextcloud</h3>
-                    <p class="text-center mb-6 text-sm">
-                      Membuat server lebih aman
-                    </p>
-                    <div class="flex w-full px-4">
-                      <a href="https://github.com/N0CT1C-S/http-to-https-Nextcloud" class="w-full text-center px-4 py-2 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-blue-500 transition duration-300 text-sm">
-                        Source Code
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="mt-16 text-center animate-fadeIn delay-500">
-          <button type="button" id="toggle-projects-btn" class="btn-primary inline-flex items-center px-6 py-3 font-medium rounded-full shadow-lg hover:shadow-xl transition duration-300">
-            <span id="toggle-projects-text">Lihat Semua Projects</span>
-            <i id="toggle-projects-icon" class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-red-400 focus:outline-none">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
           </button>
         </div>
       </div>
-    </section>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden glass-effect">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-white">Home</a>
+        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-white">About</a>
+        <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-white">Skills</a>
+        <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-white">Projects</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 section-dark">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            <span class="gradient-text">Hubungi Admin Besar</span>
-          </h2>
-          <div class="w-20 h-1 accent-red-bg mx-auto"></div>
-          <p class="mt-6 max-w-2xl mx-auto text-gray-400">
-            Ingin menjadi sigma dan skibidi? Hubungi saya di bawah ini atau langsung melalui kontak yang tersedia.
-          </p>
+  <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Halo, Saya
+          <span id="typing-text" class="gradient-text">Muhammad Sabillilah Ramadhan</span>
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-300">
+          Cyber Security & System Administrator
+        </h2>
+        <p class="text-lg mb-8 text-gray-400">
+          Saya adalah seorang antusias teknologi yang berfokus pada keamanan siber, administrasi sistem Linux, dan otomatisasi menggunakan Python. Saya senang membangun infrastruktur server yang aman dan efisien.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="btn-primary px-8 py-3 font-medium rounded-full shadow-lg hover:shadow-xl transition duration-300">
+            View My Projects
+          </a>
+          <a href="#contact" class="btn-secondary px-8 py-3 font-medium rounded-full transition duration-300">
+            Contact Me
+          </a>
         </div>
+        <div class="mt-8 flex space-x-4">
+          <a href="https://github.com/N0CT1C-S" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-400 transition text-2xl">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-sabilillah-ramadhan-1a1542407/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-400 transition text-2xl">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-400 transition text-2xl">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-400 transition text-2xl">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+          <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-red-900 rounded-full blur-xl opacity-30 animate-pulse"></div>
+          <img src="img/image.png" alt="Profil" class="relative w-full h-full rounded-full object-cover border-4 border-red-600 shadow-xl floating" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <!-- Info Kontak -->
-          <div class="animate-fadeIn delay-100 space-y-6">
-            <div class="bg-gray-900 rounded-xl shadow-lg p-6 card-hover-effect flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 accent-red">
-                  <i class="fas fa-map-marker-alt text-xl"></i>
-                </div>
-              </div>
-              <div class="ml-4">
-                <h4 class="text-lg font-semibold text-white">Alamat</h4>
-                <p class="text-gray-400">Cirebon, Indonesia</p>
-              </div>
+  <div class="wave-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 Q300,80 600,0 T1200,40 L1200,120 L0,120 Z" opacity="0.5" class="fill-current text-gray-800" />
+      <path d="M0,0 C300,100 600,20 900,80 C1100,120 1200,50 1200,50 L1200,120 L0,120 Z" class="fill-current text-gray-800" />
+    </svg>
+  </div>
+
+  <section id="about" class="py-20 section-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">About Me</span></h2>
+        <div class="w-20 h-1 accent-red-bg mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-white">Who am I?</h3>
+          <p class="text-gray-400 mb-6">Saya adalah seorang siswa Teknologi Komputer dan Jaringan (TKJ) yang tertarik pada perkembangan teknologi terkini.</p>
+          <p class="text-gray-400 mb-6">Fokus utama saya adalah belajar untuk menambah pengetahuan dan wawasan.</p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-gray-900 rounded-lg border border-gray-800">
+              <span class="block text-2xl font-bold accent-red">7+</span>
+              <span class="text-sm text-gray-500">Projects Selesai</span>
             </div>
-
-            <div class="bg-gray-900 rounded-xl shadow-lg p-6 card-hover-effect flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 accent-red">
-                  <i class="fab fa-whatsapp text-xl"></i>
-                </div>
-              </div>
-              <div class="ml-4">
-                <h4 class="text-lg font-semibold text-white">WhatsApp</h4>
-                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:accent-red transition underline-animation">
-                  +62-1829-2823-34932
-                </a>
-              </div>
-            </div>
-
-            <div class="bg-gray-900 rounded-xl shadow-lg p-6 card-hover-effect flex items-start">
-              <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 accent-red">
-                  <i class="fas fa-envelope text-xl"></i>
-                </div>
-              </div>
-              <div class="ml-4">
-                <h4 class="text-lg font-semibold text-white">Email</h4>
-                <a href="mailto:sigma911@gmail.com" class="text-gray-400 hover:accent-red transition underline-animation">
-                  sigma911@gmail.com
-                </a>
-              </div>
-            </div>
-
-            <!-- Sosial Media -->
-            <div class="bg-gray-900 rounded-xl shadow-lg p-6 card-hover-effect">
-              <h4 class="text-lg font-semibold text-white mb-4">Media Sosial</h4>
-              <div class="flex space-x-4">
-                <a href="https://github.com/N0CT1C-S" target="_blank" rel="noopener noreferrer" class="tooltip flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 text-gray-300 hover:accent-red-bg hover:text-white transition duration-300">
-                  <i class="fab fa-github text-xl"></i>
-                  <span class="tooltip-text">GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/muhammad-sabilillah-ramadhan-1a1542407/" target="_blank" rel="noopener noreferrer" class="tooltip flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 text-gray-300 hover:accent-red-bg hover:text-white transition duration-300">
-                  <i class="fab fa-linkedin text-xl"></i>
-                  <span class="tooltip-text">LinkedIn</span>
-                </a>
-                <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" class="tooltip flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 text-gray-300 hover:accent-red-bg hover:text-white transition duration-300">
-                  <i class="fab fa-instagram text-xl"></i>
-                  <span class="tooltip-text">Instagram</span>
-                </a>
-                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="tooltip flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 text-gray-300 hover:accent-red-bg hover:text-white transition duration-300">
-                  <i class="fab fa-whatsapp text-xl"></i>
-                  <span class="tooltip-text">WhatsApp</span>
-                </a>
-              </div>
+            <div class="p-4 bg-gray-900 rounded-lg border border-gray-800">
+              <span class="block text-2xl font-bold accent-red">1</span>
+              <span class="text-sm text-gray-500">Tahun Pengalaman</span>
             </div>
           </div>
-
-          <!-- Form Kontak -->
-          <div class="animate-fadeIn delay-200">
-            <div class="bg-gray-900 rounded-xl shadow-lg p-8 card-hover-effect">
-              <div class="space-y-6">
-                <div>
-                  <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Nama</label>
-                  <input type="text" id="name" name="name" placeholder="Nama Kamu" class="w-full px-4 py-3 rounded-lg border focus:outline-none">
+        </div>
+        <div>
+          <div class="bg-gray-900 rounded-xl shadow-lg p-8 card-hover-effect">
+            <h3 class="text-2xl font-bold mb-4 text-white">Pendekatan Saya</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <div class="flex items-center justify-center h-8 w-8 rounded-full bg-red-900 text-red-400">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
                 </div>
-                <div>
-                  <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
-                  <input type="email" id="email" name="email" placeholder="email@kamu.com" class="w-full px-4 py-3 rounded-lg border focus:outline-none">
+                <div class="ml-4">
+                  <h4 class="text-lg font-semibold text-white">Keamanan Utama</h4>
+                  <p class="text-gray-400">Saya memprioritaskan keamanan dalam setiap sistem yang saya bangun atau kelola.</p>
                 </div>
-                <div>
-                  <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Pesan</label>
-                  <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Kamu di sini..." class="w-full px-4 py-3 rounded-lg border focus:outline-none"></textarea>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <div class="flex items-center justify-center h-8 w-8 rounded-full bg-red-900 text-red-400">
+                    <i class="fas fa-terminal"></i>
+                  </div>
                 </div>
-                <button type="button" id="contact-submit" class="btn-primary w-full px-8 py-3 font-medium rounded-full shadow-lg hover:shadow-xl transition duration-300">
-                  Kirim Pesan Kepada Admin Besar
-                </button>
+                <div class="ml-4">
+                  <h4 class="text-lg font-semibold text-white">Otomatisasi</h4>
+                  <p class="text-gray-400">Mengurangi tugas manual dengan skrip Python dan Docker untuk efisiensi maksimal.</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <div class="flex items-center justify-center h-8 w-8 rounded-full bg-red-900 text-red-400">
+                    <i class="fas fa-server"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-semibold text-white">Stabilitas Sistem</h4>
+                  <p class="text-gray-400">Memastikan server dan layanan berjalan 24/7 dengan aman dan menjaga agar server terhindar dari peretasan.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="py-12 section-darker border-t border-gray-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="mb-8">
-          <a href="#" class="text-2xl font-bold gradient-text">Sigma</a>
-        </div>
-        <p class="text-gray-400 mb-8">
-          Menjadi Sigma agar lebih Sigma
-        </p>
-        <div class="flex justify-center space-x-6 mb-8">
-          <a href="#home" class="text-gray-500 hover:accent-red transition">Home</a>
-          <a href="#about" class="text-gray-500 hover:accent-red transition">About</a>
-          <a href="#skills" class="text-gray-500 hover:accent-red transition">Skills</a>
-          <a href="#projects" class="text-gray-500 hover:accent-red transition">Projects</a>
-          <a href="#contact" class="text-gray-500 hover:accent-red transition">Contact</a>
-        </div>
-        <p class="text-gray-600 text-sm">
-          &copy; 2026 Sigma 
-        </p>
+  <section id="skills" class="py-20 section-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Skills</span></h2>
+        <div class="w-20 h-1 accent-red-bg mx-auto"></div>
       </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      <div class="skills-carousel">
+        <div class="skills-carousel-track" id="skillsTrack">
+          <div class="skills-carousel-item">
+            <div class="bg-gray-900 rounded-xl p-6 text-center card-hover-effect h-full">
+              <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4">
+                <i class="fas fa-database text-4xl accent-red"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-white">SQL Injection</h3>
+              <div class="w-full progress-bar rounded-full h-2.5">
+                <div class="progress-fill h-2.5 rounded-full" style="width:85%"></div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Advanced</p>
+            </div>
+          </div>
+          <div class="skills-carousel-item">
+            <div class="bg-gray-900 rounded-xl p-6 text-center card-hover-effect h-full">
+              <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4">
+                <i class="fab fa-linux text-4xl accent-red"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-white">Kali Linux</h3>
+              <div class="w-full progress-bar rounded-full h-2.5">
+                <div class="progress-fill h-2.5 rounded-full" style="width:90%"></div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Advanced</p>
+            </div>
+          </div>
+          <div class="skills-carousel-item">
+            <div class="bg-gray-900 rounded-xl p-6 text-center card-hover-effect h-full">
+              <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4">
+                <i class="fas fa-desktop text-4xl accent-red"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-white">Arch Linux</h3>
+              <div class="w-full progress-bar rounded-full h-2.5">
+                <div class="progress-fill h-2.5 rounded-full" style="width:95%"></div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Advanced</p>
+            </div>
+          </div>
+          <div class="skills-carousel-item">
+            <div class="bg-gray-900 rounded-xl p-6 text-center card-hover-effect h-full">
+              <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4">
+                <i class="fas fa-server text-4xl accent-red"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-white">Ubuntu Server</h3>
+              <div class="w-full progress-bar rounded-full h-2.5">
+                <div class="progress-fill h-2.5 rounded-full" style="width:95%"></div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Advanced</p>
+            </div>
+          </div>
+          <div class="skills-carousel-item">
+            <div class="bg-gray-900 rounded-xl p-6 text-center card-hover-effect h-full">
+              <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4">
+                <i class="fab fa-linux text-4xl accent-red"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-white">Linux Mint</h3>
+              <div class="w-full progress-bar rounded-full h-2.5">
+                <div class="progress-fill h-2.5 rounded-full" style="width:90%"></div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Advanced</p>
+            </div>
+          </div>
+          <div class="skills-carousel-item">
+            <div class="bg-gray-900 rounded-xl p-6 text-center card-hover-effect h-full">
+              <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4">
+                <i class="fas fa-mask text-4xl accent-red"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-white">Parrot OS</h3>
+              <div class="w-full progress-bar rounded-full h-2.5">
+                <div class="progress-fill h-2.5 rounded-full" style="width:85%"></div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Advanced</p>
+            </div>
+          </div>
+          <div class="skills-carousel-item">
+            <div class="bg-gray-900 rounded-xl p-6 text-center card-hover-effect h-full">
+              <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4">
+                <i class="fas fa-database text-4xl accent-red"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-white">SQL Injection</h3>
+              <div class="w-full progress-bar rounded-full h-2.5">
+                <div class="progress-fill h-2.5 rounded-full" style="width:85%"></div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Advanced</p>
+            </div>
+          </div>
+          <div class="skills-carousel-item">
+            <div class="bg-gray-900 rounded-xl p-6 text-center card-hover-effect h-full">
+              <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-full mb-4">
+                <i class="fab fa-linux text-4xl accent-red"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-white">Kali Linux</h3>
+              <div class="w-full progress-bar rounded-full h-2.5">
+                <div class="progress-fill h-2.5 rounded-full" style="width:90%"></div>
+              </div>
+              <p class="text-sm text-gray-500 mt-2">Advanced</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-20 section-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">My Projects</span></h2>
+        <div class="w-20 h-1 accent-red-bg mx-auto"></div>
+        <p class="mt-6 max-w-2xl mx-auto text-gray-400">Berikut adalah beberapa proyek terbaru yang telah saya kerjakan.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
+              <div class="h-48 overflow-hidden">
+                <img src="img/images.jpg" alt="Nextcloud" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-bold mb-2 text-white">Penyimpanan Cloud Pribadi</h3>
+                <p class="text-gray-400 text-sm mb-4">Implementasi Nextcloud menggunakan Docker Compose untuk penyimpanan data yang aman.</p>
+                <div class="mt-auto flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Docker</span>
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Linux</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
+              <img src="img/images.jpg" alt="Nextcloud BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="absolute inset-0 bg-black/70 z-0"></div>
+              <div class="relative z-10 p-6 text-center">
+                <h3 class="text-xl font-bold mb-4">Nextcloud Docker</h3>
+                <p class="mb-6 text-sm">Dengan MariaDB, Redis, dan Nginx Proxy Manager untuk SSL otomatis.</p>
+                <a href="https://github.com/N0CT1C-S/Cloud-Dokumentasi-" class="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-blue-500 transition text-sm">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
+              <div class="h-48 overflow-hidden">
+                <img src="img/jeffyln.png" alt="Jellyfin" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-bold mb-2 text-white">Home Media Server</h3>
+                <p class="text-gray-400 text-sm mb-4">Membangun server media streaming pribadi menggunakan Jellyfin.</p>
+                <div class="mt-auto flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Multimedia</span>
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Server</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
+              <img src="img/jeffyln.png" alt="Jellyfin BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="absolute inset-0 bg-black/70 z-0"></div>
+              <div class="relative z-10 p-6 text-center">
+                <h3 class="text-xl font-bold mb-4">Jellyfin Media</h3>
+                <p class="mb-6 text-sm">Mendukung hardware transcoding untuk streaming lancar.</p>
+                <a href="https://github.com/N0CT1C-S/Cloud-Dokumentasi-" class="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-blue-500 transition text-sm">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
+              <div class="h-48 overflow-hidden">
+                <img src="img/autoliccker.png" alt="Autoclicker" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-bold mb-2 text-white">Autoclicker</h3>
+                <p class="text-gray-400 text-sm mb-4">Script autoclicker untuk farming Roblox atau tap-tap TikTok.</p>
+                <div class="mt-auto flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Automation</span>
+                  <span class="px-3 py-1 bg-gray-800 text-red-400 text-xs font-medium rounded-full border border-red-600">Script</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
+              <img src="img/autoliccker.png" alt="Autoclicker BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="absolute inset-0 bg-black/70 z-0"></div>
+              <div class="relative z-10 p-6 text-center">
+                <h3 class="text-xl font-bold mb-4">Autoclicker Python</h3>
+                <p class="mb-6 text-sm">Menggunakan PyAutoGUI, bisa diatur kecepatan dan lokasi klik.</p>
+                <a href="https://github.com/N0CT1C-S/autocklicker" class="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-blue-500 transition text-sm">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card extra-project">
+          <div class="project-card-inner">
+            <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
+              <div class="h-48 overflow-hidden flex items-center justify-center bg-gray-800">
+                <img src="img/image copy.png" alt="Kalkulator" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-bold mb-2 text-white">Kalkulator Mobile</h3>
+                <p class="text-gray-400 text-sm mb-4">Aplikasi kalkulator sederhana untuk mobile.</p>
+                <div class="mt-auto flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Mobile</span>
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Kalkulator</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
+              <img src="img/image copy.png" alt="Kalkulator BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="absolute inset-0 bg-black/70 z-0"></div>
+              <div class="relative z-10 p-6 text-center">
+                <h3 class="text-xl font-bold mb-4">Kalkulator-mobile</h3>
+                <p class="mb-6 text-sm">Dibuat dengan HTML, CSS, JavaScript.</p>
+                <div class="flex gap-4 justify-center">
+                  <a href="https://n0ct1c-s.github.io/Kalkulator-mobile/" class="px-4 py-2 bg-white text-blue-500 rounded-full hover:bg-gray-200 transition text-sm">Demo</a>
+                  <a href="https://github.com/N0CT1C-S/Kalkulator-mobile" class="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-blue-500 transition text-sm">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card extra-project">
+          <div class="project-card-inner">
+            <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
+              <div class="h-48 overflow-hidden">
+                <img src="img/image copy 2.png" alt="Portofolio" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-bold mb-2 text-white">Portofolio</h3>
+                <p class="text-gray-400 text-sm mb-4">Portofolio modern dan sigma.</p>
+                <div class="mt-auto flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">HTML</span>
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">CSS</span>
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">JS</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
+              <img src="img/image copy 2.png" alt="Portofolio BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="absolute inset-0 bg-black/70 z-0"></div>
+              <div class="relative z-10 p-6 text-center">
+                <h3 class="text-xl font-bold mb-4">Portofolio</h3>
+                <p class="mb-6 text-sm">Menampilkan pengalaman, skills, dan project.</p>
+                <div class="flex gap-4 justify-center">
+                  <a href="https://n0ct1c-s.github.io/My_Portofolio/" class="px-4 py-2 bg-white text-blue-500 rounded-full hover:bg-gray-200 transition text-sm">Demo</a>
+                  <a href="https://github.com/N0CT1C-S/My_Portofolio" class="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-blue-500 transition text-sm">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card extra-project">
+          <div class="project-card-inner">
+            <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
+              <div class="h-48 overflow-hidden flex items-center justify-center bg-gray-800">
+                <img src="img/image copy 3.png" alt="QR" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-bold mb-2 text-white">QR Generator</h3>
+                <p class="text-gray-400 text-sm mb-4">Mengubah teks/gambar menjadi QR code.</p>
+                <div class="mt-auto flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">QR</span>
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Generate</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
+              <img src="img/image copy 3.png" alt="QR BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="absolute inset-0 bg-black/70 z-0"></div>
+              <div class="relative z-10 p-6 text-center">
+                <h3 class="text-xl font-bold mb-4">QR Code</h3>
+                <p class="mb-6 text-sm">Tool sederhana untuk generate QR.</p>
+                <a href="#" class="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-blue-500 transition text-sm">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card extra-project">
+          <div class="project-card-inner">
+            <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
+              <div class="h-48 overflow-hidden flex items-center justify-center bg-gray-800">
+                <img src="img/image copy 4.png" alt="HTTP to HTTPS" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-bold mb-2 text-white">HTTP to HTTPS - Nextcloud</h3>
+                <p class="text-gray-400 text-sm mb-4">Mengamankan server Nextcloud dengan SSL.</p>
+                <div class="mt-auto flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs font-medium rounded-full border border-gray-700">Pentest</span>
+                  <span class="px-3 py-1 bg-gray-800 text-red-400 text-xs font-medium rounded-full border border-red-600">Python</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
+              <img src="img/image copy 4.png" alt="HTTPS BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <div class="absolute inset-0 bg-black/70 z-0"></div>
+              <div class="relative z-10 p-6 text-center">
+                <h3 class="text-xl font-bold mb-4">HTTP to HTTPS</h3>
+                <p class="mb-6 text-sm">Membuat server lebih aman.</p>
+                <a href="https://github.com/N0CT1C-S/http-to-https-Nextcloud" class="px-4 py-2 border-2 border-white rounded-full hover:bg-white hover:text-blue-500 transition text-sm">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <button id="toggle-projects-btn" class="btn-primary inline-flex items-center px-6 py-3 font-medium rounded-full shadow-lg hover:shadow-xl transition duration-300">
+          <span id="toggle-projects-text">Lihat Semua Proyek</span>
+          <i id="toggle-projects-icon" class="fas fa-chevron-down ml-2 transition-transform duration-300"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 section-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Hubungi Admin Besar</span></h2>
+        <div class="w-20 h-1 accent-red-bg mx-auto"></div>
+        <p class="mt-6 max-w-2xl mx-auto text-gray-400">Ingin menjadi sigma? Hubungi saya di bawah ini.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="bg-gray-900 rounded-xl p-6 card-hover-effect flex items-start">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-red-400">
+                <i class="fas fa-map-marker-alt text-xl"></i>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-semibold text-white">Alamat</h4>
+              <p class="text-gray-400">Cirebon, Indonesia</p>
+            </div>
+          </div>
+          <div class="bg-gray-900 rounded-xl p-6 card-hover-effect flex items-start">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-red-400">
+                <i class="fab fa-whatsapp text-xl"></i>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-semibold text-white">WhatsApp</h4>
+              <a href="https://wa.me/6281234567890" target="_blank" class="text-gray-400 hover:text-red-400 transition">+62 812-3456-7890</a>
+            </div>
+          </div>
+          <div class="bg-gray-900 rounded-xl p-6 card-hover-effect flex items-start">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-red-400">
+                <i class="fas fa-envelope text-xl"></i>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg font-semibold text-white">Email</h4>
+              <a href="mailto:sigma911@gmail.com" class="text-gray-400 hover:text-red-400 transition">sigma911@gmail.com</a>
+            </div>
+          </div>
+          <div class="bg-gray-900 rounded-xl p-6 card-hover-effect">
+            <h4 class="text-lg font-semibold text-white mb-4">Media Sosial</h4>
+            <div class="flex space-x-4">
+              <a href="https://github.com/N0CT1C-S" target="_blank" class="tooltip flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 text-gray-300 hover:bg-red-600 hover:text-white transition">
+                <i class="fab fa-github text-xl"></i>
+                <span class="tooltip-text">GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-sabilillah-ramadhan-1a1542407/" target="_blank" class="tooltip flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 text-gray-300 hover:bg-red-600 hover:text-white transition">
+                <i class="fab fa-linkedin text-xl"></i>
+                <span class="tooltip-text">LinkedIn</span>
+              </a>
+              <a href="https://instagram.com/username" target="_blank" class="tooltip flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 text-gray-300 hover:bg-red-600 hover:text-white transition">
+                <i class="fab fa-instagram text-xl"></i>
+                <span class="tooltip-text">Instagram</span>
+              </a>
+              <a href="https://wa.me/6281234567890" target="_blank" class="tooltip flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 text-gray-300 hover:bg-red-600 hover:text-white transition">
+                <i class="fab fa-whatsapp text-xl"></i>
+                <span class="tooltip-text">WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-900 rounded-xl p-8 card-hover-effect">
+          <div class="space-y-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Nama</label>
+              <input type="text" id="name" placeholder="Nama Kamu" class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+              <input type="email" id="email" placeholder="email@kamu.com" class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Pesan</label>
+              <textarea id="message" rows="5" placeholder="Tulis pesan..." class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+            </div>
+            <button id="contact-submit" class="btn-primary w-full px-8 py-3 font-medium rounded-full shadow-lg hover:shadow-xl transition duration-300">Kirim Pesan Kepada Admin Besar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 section-darker border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="mb-8"><a href="#" class="text-2xl font-bold gradient-text">Sigma</a></div>
+      <p class="text-gray-400 mb-8">Menjadi Sigma agar lebih Sigma</p>
+      <div class="flex justify-center space-x-6 mb-8">
+        <a href="#home" class="text-gray-500 hover:text-red-400 transition">Home</a>
+        <a href="#about" class="text-gray-500 hover:text-red-400 transition">About</a>
+        <a href="#skills" class="text-gray-500 hover:text-red-400 transition">Skills</a>
+        <a href="#projects" class="text-gray-500 hover:text-red-400 transition">Projects</a>
+        <a href="#contact" class="text-gray-500 hover:text-red-400 transition">Contact</a>
+      </div>
+      <p class="text-gray-600 text-sm">&copy; 2026 Sigma</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
