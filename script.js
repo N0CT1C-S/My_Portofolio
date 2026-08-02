@@ -83,7 +83,7 @@ if (toggleProjectsBtn) {
 
     if (isShown) {
       extraProjects.forEach((project) => project.classList.remove("show"));
-      toggleProjectsText.textContent = "Lihat Semua Proyek";
+      toggleProjectsText.textContent = "Lihat Semua Projects";
       toggleProjectsIcon.classList.remove("rotate-180");
 
       const projectsSection = document.getElementById("projects");
@@ -104,6 +104,99 @@ if (toggleProjectsBtn) {
     }
   });
 }
+
+const toggleCertificatesBtn = document.getElementById("toggle-certificates-btn");
+const toggleCertificatesText = document.getElementById("toggle-certificates-text");
+const toggleCertificatesIcon = document.getElementById("toggle-certificates-icon");
+const extraCertificates = document.querySelectorAll(".extra-certificate");
+
+if (toggleCertificatesBtn && extraCertificates.length > 0) {
+  toggleCertificatesBtn.addEventListener("click", () => {
+    const isShown = extraCertificates[0] && extraCertificates[0].classList.contains("show");
+
+    if (isShown) {
+      extraCertificates.forEach((cert) => cert.classList.remove("show"));
+      toggleCertificatesText.textContent = "Lihat Semua Certificates";
+      toggleCertificatesIcon.classList.remove("rotate-180");
+
+      const certificatesSection = document.getElementById("certificates");
+      if (certificatesSection) {
+        window.scrollTo({
+          top: certificatesSection.offsetTop - 64,
+          behavior: "smooth"
+        });
+      }
+    } else {
+      extraCertificates.forEach((cert, i) => {
+        setTimeout(() => {
+          cert.classList.add("show");
+        }, i * 100);
+      });
+      toggleCertificatesText.textContent = "Tampilkan Lebih Sedikit";
+      toggleCertificatesIcon.classList.add("rotate-180");
+    }
+  });
+}
+
+const certificateModal = document.getElementById("certificate-modal");
+const certificateModalImg = document.getElementById("certificate-modal-img");
+const certificateModalTitle = document.getElementById("certificate-modal-title");
+const certificateModalMeta = document.getElementById("certificate-modal-meta");
+const certificateModalClose = document.getElementById("certificate-modal-close");
+const certificateBtns = document.querySelectorAll(".certificate-card-btn");
+
+function openCertificateModal(btn) {
+  const img = btn.getAttribute("data-img");
+  const title = btn.getAttribute("data-title");
+  const issuer = btn.getAttribute("data-issuer");
+  const date = btn.getAttribute("data-date");
+
+  if (certificateModalImg) {
+    certificateModalImg.src = img || "";
+    certificateModalImg.alt = title || "";
+  }
+  if (certificateModalTitle) {
+    certificateModalTitle.textContent = title || "";
+  }
+  if (certificateModalMeta) {
+    certificateModalMeta.textContent = `${issuer || ""} · ${date || ""}`;
+  }
+
+  if (certificateModal) {
+    certificateModal.classList.remove("hidden");
+    certificateModal.classList.add("flex");
+    document.body.classList.add("overflow-hidden");
+  }
+}
+
+function closeCertificateModal() {
+  if (certificateModal) {
+    certificateModal.classList.add("hidden");
+    certificateModal.classList.remove("flex");
+    document.body.classList.remove("overflow-hidden");
+  }
+}
+
+certificateBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    openCertificateModal(btn);
+  });
+});
+
+if (certificateModalClose) {
+  certificateModalClose.addEventListener("click", closeCertificateModal);
+}
+
+if (certificateModal) {
+  certificateModal.addEventListener("click", (e) => {
+    if (e.target === certificateModal) closeCertificateModal();
+  });
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeCertificateModal();
+});
 
 const contactSubmit = document.getElementById("contact-submit");
 const waNumber = "6285185799456";
