@@ -8,9 +8,30 @@
   100% { background-position: 50px 50px; }
 }
 
+
+
 .animate-fadeIn {
   animation: fadeIn 0.8s ease-out forwards;
 }
+
+@keyframes marquee {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee-smooth {
+      display: flex;
+      width: max-content;
+      animation: marquee 15s linear infinite;
+    }
+
+    .animate-marquee-smooth:hover {
+      animation-play-state: paused;
+    }
 
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
