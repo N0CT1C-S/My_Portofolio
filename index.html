@@ -7,15 +7,30 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
-  <link rel="website_iccon" type="png" href="icon.png">
+  <link rel="icon" type="image/png" href="icon.png">
 </head>
-<body class="section-dark">
+<body class="portfolio-redline">
 
-  <nav class="fixed w-full z-50 glass-effect shadow-sm">
+  <video
+    class="site-background-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-hidden="true"
+  >
+    <source src="14519234_1920_1080_60fps.mp4" type="video/mp4" />
+  </video>
+  
+  <div class="video-fallback-wallpaper"></div>
+  <div class="site-background-overlay"></div>
+
+  <nav class="fixed w-full z-50 glass-effect shadow-sm site-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
         <div class="flex items-center">
-          <a href="#" class="text-xl font-bold text-white tracking-tighter">SIG<span class="text-red-600">MA</span></a>
+          <a href="#" class="site-logo text-xl font-black tracking-[0.22em]">SIG<span class="logo-accent">MA</span><span class="logo-code">//01</span></a>
         </div>
         <div class="hidden md:flex items-center space-x-8">
           <a href="#home" class="nav-link px-3 py-2 text-sm font-medium">Home</a>
@@ -46,22 +61,22 @@
     </div>
   </nav>
 
-  <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+  <section id="home" class="hero-section pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div class="order-2 md:order-1">
         <div class="inline-block px-4 py-1 rounded-full bg-red-900/20 border border-red-900/50 text-red-400 text-xs font-bold mb-6 tracking-widest uppercase">
-          SIAP MENGISI 19 JUTA LAPANGAN PEKERJAAN 
+          CYBER OPERATIONS // PERSONAL PROFILE 
         </div>
         <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Halo, Saya
+          SECURITY-MINDED<br>BUILDER
           <span id="typing-text" class="gradient-text">Muhammad Sabillilah Ramadhan</span>
         </h1>
         <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-300 flex items-center">
           <span class="w-8 h-[2px] bg-red-600 mr-4"></span>
-          Cyber Security & Cloud Engineering 
+          CYBER SECURITY / CLOUD ENGINEERING 
         </h2>
         <p class="text-lg mb-8 text-gray-400 max-w-xl">
-          "Saya adalah siswa jurusan TKJ yang memiliki minat yang besar di bidang keamanan siber, administrasi Linux dan cloud engineering.".
+          Membangun sistem yang aman, mengotomatisasi pekerjaan yang repetitif, dan menjaga infrastruktur tetap siap menghadapi gangguan.
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="#projects" class="btn-primary px-8 py-3 font-medium rounded-full shadow-lg hover:shadow-xl transition duration-300 flex items-center">
@@ -112,15 +127,15 @@
     </svg>
   </div>
 
-  <section id="about" class="py-20 section-darker">
+  <section id="about" class="about-section py-20 section-darker">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">About Me</span></h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Profile</span></h2>
         <div class="w-20 h-1 accent-red-bg mx-auto"></div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h3 class="text-2xl font-bold mb-4 text-white">Who am I?</h3>
+          <h3 class="text-2xl font-bold mb-4 text-white">WHO AM I?</h3>
           <p class="text-gray-400 mb-6 leading-relaxed">Saya adalah seorang siswa Teknik Komputer dan Jaringan (TKJ) yang memiliki antusiasme tinggi terhadap perkembangan teknologi terkini, khususnya dalam ranah keamanan digital.</p>
           <div class="grid grid-cols-2 gap-6">
             <div class="p-6 bg-gray-900 rounded-2xl border border-gray-800 card-hover-effect">
@@ -293,7 +308,7 @@
               <div class="relative z-10 p-6 text-center">
                 <h3 class="text-xl font-bold mb-4">Cisco Certified</h3>
                 <p class="mb-6 text-sm">Sertifikasi dasar jaringan yang mencakup model OSI, protokol TCP/IP, dan dasar infrastruktur jaringan.</p>
-                <button type="button" class="certificate-card-btn px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-red-600 transition font-bold text-sm" data-img="Networking_Basics_certificate_mr3643801-gmail-com_f5a804e3-1b6a-4f66-9142-317ede698627-1.png" data-title="Networking Basics" data-issuer="Cisco Networking Academy" data-date="2025">Lihat Detail</button>
+                <button type="button" class="certificate-card-btn px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-red-600 transition font-bold text-sm" data-img="Networking_Basics_certificate_mr3643801-gmail-com_f5a804e3-1b6a-4f66-9142-317ede698627-1.webp" data-title="Networking Basics" data-issuer="Cisco Networking Academy" data-date="2026">Lihat Detail</button>
               </div>
             </div>
           </div>
@@ -320,7 +335,7 @@
               <div class="relative z-10 p-6 text-center">
                 <h3 class="text-xl font-bold mb-4">Python Certified</h3>
                 <p class="mb-6 text-sm">Sertifikasi dasar pemrograman Python mencakup struktur data, logika alur, dan fungsi.</p>
-                <button type="button" class="certificate-card-btn px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-red-600 transition font-bold text-sm" data-img="Python_Essentials_1_certificate_mr3643801-gmail-com_d580072d-c36d-40c3-8cf0-ba7867ee3af6-1.png" data-title="Python Essentials 1" data-issuer="Cisco Networking Academy" data-date="2026">Lihat Detail</button>
+                <button type="button" class="certificate-card-btn px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-red-600 transition font-bold text-sm" data-img="Python_Essentials_1_certificate_mr3643801-gmail-com_d580072d-c36d-40c3-8cf0-ba7867ee3af6-1.webp" data-title="Python Essentials 1" data-issuer="Cisco Networking Academy" data-date="2026">Lihat Detail</button>
               </div>
             </div>
           </div>
@@ -347,7 +362,7 @@
               <div class="relative z-10 p-6 text-center">
                 <h3 class="text-xl font-bold mb-4">Cybersecurity Fundamentals</h3>
                 <p class="mb-6 text-sm">pendekatan umum yang dilakukan organisasi untuk mencegah, mendeteksi, dan merespons serangan siber.</p>
-                <button type="button" class="certificate-card-btn px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-red-600 transition font-bold text-sm" data-img="IBMDesign20260802-8-yteode-1.png" data-title="Cybersecurity Fundamentals" data-issuer="IBM SkillsBuild" data-date="2026">Lihat Detail</button>
+                <button type="button" class="certificate-card-btn px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-red-600 transition font-bold text-sm" data-img="IBMDesign20260802-8-yteode-1.webp" data-title="Cybersecurity Fundamentals" data-issuer="IBM SkillsBuild" data-date="2026">Lihat Detail</button>
               </div>
             </div>
           </div>
@@ -373,8 +388,8 @@
               <div class="absolute inset-0 bg-black/70 z-0"></div>
               <div class="relative z-10 p-6 text-center">
                 <h3 class="text-xl font-bold mb-4">Introduction to Cybersecurity</h3>
-                <p class="mb-6 text-sm">mempelajari dasar-dasar keamanan siber untuk melindungi kehidupan digital pribadi kamu dan mendapatkan wawasan tentang tantangan keamanan terbesar yang dihadapi perusahaan, pemerintah, dan lembaga pendidikan saat ini.</p>
-                <button type="button" class="certificate-card-btn px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-red-600 transition font-bold text-sm" data-img="Sertif-AWS.png" data-title="AWS Cloud Practitioner Essentials (Bahasa Indonesia)" data-issuer="AWS skillbuild" data-date="2026">Lihat Detail</button>
+                <p class="mb-6 text-sm">Mempelajari dasar-dasar keamanan siber untuk melindungi kehidupan digital pribadi dan memahami tantangan keamanan yang dihadapi perusahaan, pemerintah, serta lembaga pendidikan.</p>
+                <button type="button" class="certificate-card-btn px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-red-600 transition font-bold text-sm" data-img="Introduction_to_Cybersecurity_certificate_mr3643801-gmail-com_46ae0748-0695-4e7a-96b1-76a4307fdd38-1.webp" data-title="Introduction to Cybersecurity" data-issuer="Cisco Networking Academy" data-date="2026">Lihat Detail</button>
               </div>
             </div>
           </div>
@@ -400,7 +415,7 @@
               <div class="absolute inset-0 bg-black/70 z-0"></div>
               <div class="relative z-10 p-6 text-center">
                 <h3 class="text-xl font-bold mb-4">AWS Cloud Practitioner Essentials (Bahasa Indonesia)</h3>
-                <p class="mb-6 text-sm">Mempelajari dasar-dasar komputasi awan, layanan inti AWS (compute, storage, database, networking), serta model harga dan keamanan di AWS.<p>
+                <p class="mb-6 text-sm">Mempelajari dasar-dasar komputasi awan, layanan inti AWS (compute, storage, database, networking), serta model harga dan keamanan di AWS.</p>
                 <button type="button" class="certificate-card-btn px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-red-600 transition font-bold text-sm" data-img="Sertif-AWS.png" data-title="AWS Cloud Practitioner Essentials (Bahasa Indonesia)" data-issuer="AWS skillbuild" data-date="2026">Lihat Detail</button>
               </div>
             </div>
@@ -430,12 +445,12 @@
     </div>
   </div>
 
-  <section id="projects" class="py-20 section-dark">
+  <section id="projects" class="projects-section py-20 section-dark">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">My Projects</span></h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Projects</span></h2>
         <div class="w-20 h-1 accent-red-bg mx-auto"></div>
-        <p class="mt-6 max-w-2xl mx-auto text-gray-400">Berikut adalah beberapa projects sigma yang telah saya kerjakan.</p>
+        <p class="mt-6 max-w-2xl mx-auto text-gray-400">Eksperimen, automasi, dan infrastruktur yang saya bangun untuk menjadi agar lebih sigma.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
@@ -524,7 +539,7 @@
           <div class="project-card-inner">
             <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
               <div class="h-48 overflow-hidden flex items-center justify-center bg-gray-800">
-                <img src="image copy.png" alt="Kalkulator" class="w-full h-full object-cover">
+                <img src="imagecopy.png" alt="Kalkulator" class="w-full h-full object-cover">
               </div>
               <div class="p-6 flex flex-col flex-grow">
                 <h3 class="text-xl font-bold mb-2 text-white">Kalkulator Mobile</h3>
@@ -536,7 +551,7 @@
               </div>
             </div>
             <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
-              <img src="image copy.png" alt="Kalkulator BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <img src="imagecopy.png" alt="Kalkulator BG" class="absolute inset-0 w-full h-full object-cover z-0">
               <div class="absolute inset-0 bg-black/70 z-0"></div>
               <div class="relative z-10 p-6 text-center">
                 <h3 class="text-xl font-bold mb-4">Kalkulator-mobile</h3>
@@ -554,7 +569,7 @@
           <div class="project-card-inner">
             <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
               <div class="h-48 overflow-hidden">
-                <img src="image copy 2.png" alt="Portofolio" class="w-full h-full object-cover">
+                <img src="imagecopy2.png" alt="Portofolio" class="w-full h-full object-cover">
               </div>
               <div class="p-6 flex flex-col flex-grow">
                 <h3 class="text-xl font-bold mb-2 text-white">Portofolio</h3>
@@ -567,7 +582,7 @@
               </div>
             </div>
             <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
-              <img src="image copy 2.png" alt="Portofolio BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <img src="imagecopy2.png" alt="Portofolio BG" class="absolute inset-0 w-full h-full object-cover z-0">
               <div class="absolute inset-0 bg-black/70 z-0"></div>
               <div class="relative z-10 p-6 text-center">
                 <h3 class="text-xl font-bold mb-4">Portofolio</h3>
@@ -585,7 +600,7 @@
           <div class="project-card-inner">
             <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
               <div class="h-48 overflow-hidden flex items-center justify-center bg-gray-800">
-                <img src="image copy 3.png" alt="QR" class="w-full h-full object-cover">
+                <img src="imagecopy3.png" alt="QR" class="w-full h-full object-cover">
               </div>
               <div class="p-6 flex flex-col flex-grow">
                 <h3 class="text-xl font-bold mb-2 text-white">QR Generator</h3>
@@ -597,7 +612,7 @@
               </div>
             </div>
             <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
-              <img src="image copy 3.png" alt="QR BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <img src="imagecopy3.png" alt="QR BG" class="absolute inset-0 w-full h-full object-cover z-0">
               <div class="absolute inset-0 bg-black/70 z-0"></div>
               <div class="relative z-10 p-6 text-center">
                 <h3 class="text-xl font-bold mb-4">QR Code</h3>
@@ -612,7 +627,7 @@
           <div class="project-card-inner">
             <div class="project-card-front absolute inset-0 bg-gray-900 rounded-xl overflow-hidden flex flex-col border border-gray-800">
               <div class="h-48 overflow-hidden flex items-center justify-center bg-gray-800">
-                <img src="image copy 4.png" alt="HTTP to HTTPS" class="w-full h-full object-cover">
+                <img src="imagecopy4.png" alt="HTTP to HTTPS" class="w-full h-full object-cover">
               </div>
               <div class="p-6 flex flex-col flex-grow">
                 <h3 class="text-xl font-bold mb-2 text-white">HTTP to HTTPS - Nextcloud</h3>
@@ -624,7 +639,7 @@
               </div>
             </div>
             <div class="project-card-back absolute inset-0 rounded-xl overflow-hidden flex flex-col justify-center items-center text-white">
-              <img src="image copy 4.png" alt="HTTPS BG" class="absolute inset-0 w-full h-full object-cover z-0">
+              <img src="imagecopy4.png" alt="HTTPS BG" class="absolute inset-0 w-full h-full object-cover z-0">
               <div class="absolute inset-0 bg-black/70 z-0"></div>
               <div class="relative z-10 p-6 text-center">
                 <h3 class="text-xl font-bold mb-4">HTTP to HTTPS</h3>
@@ -645,13 +660,18 @@
     </div>
   </section>
 
-  <section id="contact" class="py-20 section-darker">
+  <section id="contact" class="contact-section py-20 section-darker">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Contact</span></h2>
-        <div class="w-20 h-1 accent-red-bg mx-auto"></div>
-        <p class="mt-6 max-w-2xl mx-auto text-gray-400">Ada Pertanyaan atau saran silahkan hubungi admin besar.</p>
-      </div>
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    <span class="gradient-text">CONTACT</span>
+  </h2>
+  <div class="w-20 h-1 accent-red-bg mx-auto"></div>
+  <p class="mt-6 max-w-2xl mx-auto text-gray-400">
+    Ingin Sigma Skibidi Mewing Rizz?, Hubungi saya di bawah ini.
+  </p>
+</div>
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div class="space-y-6">
           <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 card-hover-effect flex items-start">
@@ -730,11 +750,11 @@
     </div>
   </section>
 
-  <footer class="py-12 section-dark border-t border-gray-800">
+  <footer class="site-footer py-12 section-dark border-t border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <div class="mb-8"><a href="#" class="text-2xl font-bold gradient-text">SIGMA</a></div>
-    <p class="text-gray-400 mb-8">Menjadi Sigma agar lebih Sigma</p>
-    
+    <div class="mb-8">
+  <a href="#" class="text-2xl font-black tracking-[0.2em] gradient-text">SIGMA<span class="text-red-500">.</span></a></div>
+    <p class="text-gray-400 mb-8 font-mono text-xs uppercase tracking-[0.22em]">Sigma sampai Mewing</p>
     <div class="marquee-container overflow-hidden w-full bg-gray-900/50 py-4 border-y border-white/10">
       <div class="animate-marquee-smooth flex gap-12 text-lg font-medium whitespace-nowrap">
         
