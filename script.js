@@ -2,6 +2,22 @@ const toggle = document.getElementById("toggle");
 const toggleMobile = document.getElementById("toggle-mobile");
 const html = document.documentElement;
 const body = document.body;
+const backgroundVideo = document.querySelector(".site-background-video");
+
+if (backgroundVideo) {
+  backgroundVideo.addEventListener("loadeddata", () => {
+    console.log("Background video berhasil dimuat.");
+  });
+
+  backgroundVideo.addEventListener("error", () => {
+    console.error("Background video gagal dimuat. Periksa nama file, lokasi, dan format MP4.");
+    backgroundVideo.style.display = "none";
+  });
+
+  backgroundVideo.play().catch(() => {
+    console.warn("Autoplay tidak tersedia; video memerlukan interaksi pengguna.");
+  });
+}
 
 function updateLightMode(isLight) {
   if (isLight) {
@@ -34,6 +50,59 @@ if (mobileMenuButton && mobileMenu) {
   });
 }
 
+let clickAudioContext;
+
+function playAerospaceClick() {
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContext) return;
+
+  clickAudioContext ||= new AudioContext();
+  if (clickAudioContext.state === "suspended") {
+    clickAudioContext.resume();
+  }
+
+  const now = clickAudioContext.currentTime;
+  const oscillator = clickAudioContext.createOscillator();
+  const gain = clickAudioContext.createGain();
+
+  oscillator.type = "sine";
+  oscillator.frequency.setValueAtTime(620, now);
+  oscillator.frequency.exponentialRampToValueAtTime(220, now + 0.11);
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.045, now + 0.012);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.12);
+
+  oscillator.connect(gain);
+  gain.connect(clickAudioContext.destination);
+  oscillator.start(now);
+  oscillator.stop(now + 0.13);
+}
+
+function triggerAerospaceFeedback(element) {
+  element.classList.remove("aero-clicked");
+  void element.offsetWidth;
+  element.classList.add("aero-clicked");
+  window.setTimeout(() => element.classList.remove("aero-clicked"), 420);
+  playAerospaceClick();
+}
+
+document.querySelectorAll("button, .btn-primary, .btn-secondary").forEach((element) => {
+  element.addEventListener("click", () => triggerAerospaceFeedback(element));
+});
+
+const skillsTrack = document.getElementById("skillsTrack");
+if (skillsTrack && !skillsTrack.dataset.loopReady) {
+  const skillsGroup = document.createElement("div");
+  skillsGroup.className = "skills-carousel-group";
+
+  Array.from(skillsTrack.children).forEach((item) => skillsGroup.appendChild(item));
+
+  const duplicateGroup = skillsGroup.cloneNode(true);
+  duplicateGroup.setAttribute("aria-hidden", "true");
+  skillsTrack.append(skillsGroup, duplicateGroup);
+  skillsTrack.dataset.loopReady = "true";
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -56,6 +125,7 @@ const textToType = "Muhammad Sabillilah Ramadhan";
 let index = 0;
 
 function typeEffect() {
+  if (!typingElement) return;
   if (index < textToType.length) {
     typingElement.textContent += textToType.charAt(index);
     index++;
